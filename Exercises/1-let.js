@@ -2,7 +2,7 @@
 
 // Define variable to store your name as a string
 
-let name = undefined;
+let name = 'Ivan';
 // eslint-disable-next-line linebreak-style
 
 module.exports = { name };

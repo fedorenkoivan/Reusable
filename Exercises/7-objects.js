@@ -7,6 +7,15 @@
 - Try to assign other object to both identifiers.
 - Explain script behaviour. */
 
-const fn = null;
+const fn = () => {
+  const cObject = { name: 'Ivan' };
+  let vObject = { name: 'Nazar' };
+
+  cObject.name = 'Sirko';
+  // cObject = { name: 'Alex' };
+  // не працює позаяк cObject є константою яку не можна перезаписувати.
+  vObject = { name: 'Ivan' };
+  vObject.name = 'Ivan';
+};
 
 module.exports = { fn };
